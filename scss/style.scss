@@ -1,0 +1,379 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+$background-body: #D1E4CB;
+$background-header: #2F962D;
+
+body{
+    background-color: $background-body;
+}
+
+header{
+    background-color: $background-header;
+    nav{
+        color: white;
+        font-family: 'Tilt Warp', cursive;
+        font-size: 30px;
+        margin: 0 30px;
+    }
+    img{
+        width: 150px;
+    }
+    li{
+        float: left;
+        list-style: none;
+        margin-left: 5px;
+    }
+    a{
+        color: white;
+        text-decoration: none;
+    }
+}
+.header{
+    color: white;
+    font-family: 'Tilt Warp', cursive;
+    font-size: 30px;
+    margin: 0 30px;
+}
+
+main{
+    width: 100%;
+    height: 100%;
+    background-image: url(../assets/img/fondo.jpg);
+    background-repeat: no-repeat;
+    a{
+        color: white;
+        text-decoration: none;
+    }
+}
+.main{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    .main1{
+        color: white;
+        display: grid;
+        grid-column: 1 / 4;
+        grid-row: 1 / 2;
+        justify-self: center;
+        background-color: rgba(128, 128, 128, 0.527);
+        width: 1000px;
+        height: 200px;
+        margin-bottom: 100px;
+        margin-top: 20px;
+        border-radius: 20px;
+        h1{
+            display: grid;
+            justify-content: center;
+        }
+    }
+    .main2{
+        color: white;
+        display: grid;
+        grid-column: 1 / 2;
+        grid-row: 2 / 3;
+        background-color: #2f962db8;
+        width: 250px;
+        height: 300px;
+        border-radius: 20px;
+        justify-self: center;
+        text-align: center;
+        h2{
+            display: grid;
+            justify-content: center;
+        }
+    }
+    .main3{
+        color: white;
+        display: grid;
+        grid-column: 2/3;
+        grid-row: 2/3;
+        background-color: #2f962db8;
+        width: 250px;
+        height: 250px;
+        border-radius: 20px;
+        justify-self: center;
+        text-align: center;
+        h2{
+            display: grid;
+            justify-content: center;
+        }
+    }
+    .main4{
+        color: white;
+        display: grid;
+        grid-column: 3/4;
+        grid-row: 2/3;
+        background-color: #2f962db8;
+        width: 250px;
+        height: 300px;
+        border-radius: 20px;
+        justify-self: center;
+        text-align: center;
+        h2{
+            display: grid;
+            justify-content: center;
+        }
+    }
+    .main5{
+        color: white;
+        display: grid;
+        grid-column: 1/4;
+        grid-row: 3/4;
+        background-color: rgba(128, 128, 128, 0.515);
+        width: 500px;
+        height: 200px;
+        text-align: center;
+        justify-self: center;
+        border-radius: 20px;
+    }
+    
+}
+
+footer{
+    background-color: #B9C7BA;
+    width: 100%;
+    .footer{
+        display: flex;
+        justify-content: flex-end;
+    }
+}
+
+
+.frutas{
+    background-image: url(../assets/img/frutas-fondo.jpg);
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 200px repeat(3, 1fr);
+    h1{
+        text-align: center;
+    }
+    h2{
+        font-size: 20px;
+    }
+    .titulo{
+        grid-column: 2/4;
+        grid-row: 1/2;
+        display: flex;
+        flex-direction: column;
+        justify-self: center;
+        background-color: rgba(128, 128, 128, 0.768);
+        height: 180px;
+        color: white;
+    }
+    .frutas1{
+        grid-column: 1/5;
+        grid-row: 2/3;
+        display: flex;
+        flex-direction: row;
+        gap: 150px;
+        justify-self: center;
+        margin-bottom: 40px;
+        text-align: center;
+    }
+    .frutas2{
+        grid-column: 1/5;
+        grid-row: 3/4;
+        display: flex;
+        flex-direction: row;
+        gap: 150px;
+        justify-self: center;
+        margin-bottom: 40px;
+        text-align: center;
+    }
+    .frutas3{
+        grid-column: 1/5;
+        grid-row: 4/5;
+        display: flex;
+        flex-direction: row;
+        gap: 150px;
+        justify-self: center;
+        margin-bottom: 40px;
+        text-align: center;
+    }
+}
+
+.verduras{
+    background-image: url(../assets/img/frutas-y-verduras.jpg);
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 200px repeat(3, 1fr);
+    font-size: 20px;
+    h2{
+        font-size: 25px;
+        background-color: rgb(67, 139, 67);
+        height: 100px;
+        border-radius: 20px;
+        color: white;
+    }
+    a{
+        color: black;
+        background-color: rgba(255, 255, 255, 0.737);
+        border-radius: 5px;
+    }
+    img{
+        width: 300px;
+        height: 250px;
+        border-radius: 30px;
+    }
+    .verduras1{
+        grid-column: 1/5;
+        grid-row: 1/2;
+        background-color: rgba(128, 128, 128, 0.776);
+        text-align: center;
+        color: white;
+        width: 900px;
+        justify-self: center;
+    }
+    .verduras2{
+        grid-column: 1/5;
+        grid-row: 2/3;
+        display: flex;
+        flex-direction: row;
+        justify-self: center; 
+        gap: 50px;
+        margin-top: 30px;
+        text-align: center;
+        margin-bottom: 30px;
+    }
+    .verduras3{
+        grid-column: 1/7;
+        grid-row: 3/4;
+        display: flex;
+        flex-direction: row;
+        justify-self: center;
+        gap: 50px;
+        text-align: center;
+        margin-bottom: 30px;
+    }
+    .verduras4{
+        grid-column: 1/7;
+        grid-row: 4/5;
+        display: flex;
+        flex-direction: row;
+        justify-self: center;
+        gap: 50px;
+        text-align: center;
+        margin-bottom: 30px;
+    }
+}
+
+.carrito{
+    background-image: url(../assets/img/frutas-fondo.jpg);
+    height: 1000px;
+    ul{
+        display: flex;
+        flex-direction: row;
+        gap: 300px;
+        margin: 30px;
+        text-align: center;
+        background-color: #b9c7ba59;
+        height: 30px;
+    }
+    li{
+        list-style: none;
+    }
+    p{
+        text-align: center;
+        color: black;
+        font-size: 20px;
+    }
+    h2{
+        text-align: center;
+    color: red;
+    background-color: rgba(128, 128, 128, 0.605);
+    justify-content: center;
+    margin: 10px;
+    }
+    .carrito1{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+}
+.logo{
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+    img{
+        width: 100px;
+        height: 100px;
+    }
+    .logoCarrito{
+        background-color: red;
+        width: 130px;
+        height: 150px;
+        margin: 10px 10px 10px;
+        } 
+    .logoCarrito2{
+        background-color: #2F962D;
+        margin: 10px 10px 10px;
+    }
+}
+
+.contactos{
+    background-image: url(../assets/img/fondo-contactos.jpg);
+    background-position: center;
+    width: 100%;
+    height: 100%;
+    h1{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        color: black;
+    }
+    h2{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        font-size: 45px;
+        margin: 20px;
+        color: black;
+    }
+    .formulario{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        label{
+            background-color: gray;
+            margin: 10px;
+        }
+        p{
+            background-color: green;
+            width: 100px;
+            margin: 10px 10px;
+            border-radius: 5px;
+        }
+    }
+    .logos{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        text-align: center;
+        gap: 50px;
+        img{
+            width: 80px;
+            right: 80px;
+            margin: 20px;
+        }
+        p{
+            margin: 0 10px;
+            font-size: 30px;
+            color: rgb(0, 0, 0);
+        }
+    }
+    .mapa{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        img{
+            width: 900px;
+            height: 300px;
+            margin: 10px;
+        }
+    }
+}
+
