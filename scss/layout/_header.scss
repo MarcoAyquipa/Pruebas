@@ -1,0 +1,29 @@
+header{
+    background-color: $background-header;
+    nav{
+        color: white;
+        font-family: 'Tilt Warp', cursive;
+        font-size: 30px;
+        margin: 0 30px;
+    }
+    div{
+    img{
+        width: 150px;
+    }
+}
+    li{
+        float: left;
+        list-style: none;
+        margin-left: 5px;
+    }
+    a{
+        color: white;
+        text-decoration: none;
+    }
+}
+.header{
+    color: white;
+    font-family: 'Tilt Warp', cursive;
+    font-size: 30px;
+    margin: 0 30px;
+}
