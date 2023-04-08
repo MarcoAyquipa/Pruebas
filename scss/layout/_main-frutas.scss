@@ -1,8 +1,7 @@
 .frutas{
     background-image: url(../assets/img/frutas-fondo.jpg);
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: 300px repeat(3, 1fr);
+    @include grid(repeat(4, 1fr), 300px repeat(3, 1fr));
+    @include background;
     font-family: 'Roboto Condensed', sans-serif;
     h1{
         text-align: center;
@@ -25,31 +24,16 @@
     .frutas1{
         grid-column: 1/5;
         grid-row: 2/3;
-        display: flex;
-        flex-direction: row;
-        gap: 150px;
-        justify-self: center;
-        margin-bottom: 40px;
-        text-align: center;
+        @include flexFrutas;
     }
     .frutas2{
         grid-column: 1/5;
         grid-row: 3/4;
-        display: flex;
-        flex-direction: row;
-        gap: 150px;
-        justify-self: center;
-        margin-bottom: 40px;
-        text-align: center;
+        @include flexFrutas;
     }
     .frutas3{
         grid-column: 1/5;
         grid-row: 4/5;
-        display: flex;
-        flex-direction: row;
-        gap: 150px;
-        justify-self: center;
-        margin-bottom: 40px;
-        text-align: center;
+        @include flexFrutas;
     }
 }

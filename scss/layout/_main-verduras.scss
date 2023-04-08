@@ -1,8 +1,7 @@
 .verduras{
     background-image: url(../assets/img/frutas-y-verduras.jpg);
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: 250px repeat(3, 1fr);
+    @include grid(repeat(4, 1fr),250px repeat(3, 1fr));
+    @include background;
     font-size: 20px;
     font-family: 'Roboto Condensed', sans-serif;
     h2{
@@ -37,53 +36,16 @@
     .verduras2{
         grid-column: 1/5;
         grid-row: 2/3;
-        display: flex;
-        flex-direction: row;
-        justify-self: center; 
-        gap: 50px;
-        margin-top: 30px;
-        text-align: center;
-        margin-bottom: 30px;
-        a{
-            font-size: 20px;
-            &:hover{
-                color: red;
-                font-size: 18px;
-            }
-        }
+        @include flexVerduras;
     }
     .verduras3{
         grid-column: 1/7;
         grid-row: 3/4;
-        display: flex;
-        flex-direction: row;
-        justify-self: center;
-        gap: 50px;
-        text-align: center;
-        margin-bottom: 30px;
-        a{
-            font-size: 20px;
-            &:hover{
-                color: red;
-                font-size: 18px;
-            }
-        }
+        @include flexVerduras;
     }
     .verduras4{
         grid-column: 1/7;
         grid-row: 4/5;
-        display: flex;
-        flex-direction: row;
-        justify-self: center;
-        gap: 50px;
-        text-align: center;
-        margin-bottom: 30px;
-        a{
-            font-size: 20px;
-            &:hover{
-                color: red;
-                font-size: 18px;
-            }
+        @include flexVerduras;
         }
-    }
 }

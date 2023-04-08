@@ -1,5 +1,6 @@
 .carrito{
     background-image: url(../assets/img/frutas-fondo.jpg);
+    @include background;
     height: 1000px;
     font-family: 'Roboto Condensed', sans-serif;
     ul{
